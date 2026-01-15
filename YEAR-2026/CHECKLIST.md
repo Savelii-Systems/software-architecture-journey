@@ -6,9 +6,9 @@
 **Goal:** Develop systems, non-linear, and problem-oriented thinking.
 
 ### Books
-- [x] Thinking in Systems (Donella Meadows) - *reading, 30%*
-- [ ] Art of Problem Solving (Russell Ackoff)
-- [ ] Rice Storm (Edward de Bono)
+- [x] **Thinking in Systems ✔ (Donella Meadows)** - **reading, 30%**
+- [ ] **Art of Problem Solving (Russell Ackoff)**
+- [ ] **Rice Storm (Edward de Bono)**
 - [ ] Black Swan (Nassim Taleb)
 - [ ] The Fifth Discipline (Peter Senge)
 - [ ] The Logic of Failure (Dietrich Dörner)
