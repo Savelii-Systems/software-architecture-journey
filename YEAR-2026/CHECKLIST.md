@@ -31,8 +31,9 @@
 - [ ] Code: The Hidden Language (Charles Petzold)
 
 ### Practical Milestones
-- [x] Create GitHub repository ✓
-- [x] Set up folder structure ✓
+- [x] Create GitHub repository
+- [x] Set up folder structure
+- [x] Make changes throung VSCode by pushing them 
 - [ ] Solve 20-30 small Go tasks (Tour of Go)
 - [ ] Create console calculator or text analyzer
 - [ ] Write CLI tool in Go (log parser/CSV stats)
