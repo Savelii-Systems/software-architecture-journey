@@ -1,0 +1,37 @@
+@startuml
+title Статусная модель для 1901 (AUTO и REAL_PROPERTY)
+
+state "join" as join_place <<join>>
+
+state "PROPERTY Processing" as property_region {
+    [*] --> Property_Decision
+    Property_Decision --> Property_SUCCESS : /sendStatus(SUCCESS)
+    Property_Decision --> Property_FAILED  : /sendStatus(FAILED)
+    Property_SUCCESS --> join_place
+    Property_FAILED --> join_place
+}
+
+state "AUTO Processing" as auto_region {
+    [*] --> IN_PROGRESS
+    IN_PROGRESS --> AUTO_SUCCESS : /sendStatus(SUCCESS)
+    PROGRESS --> AUTO_FAILED  : /sendStatus(FAILED)
+    AUTO_SUCCESS --> join_place
+    AUTO_FAILED --> join_place
+}
+
+
+join_place --> [*]
+
+
+note right of Property_Decision
+  Для PROPERTY нет промежуточного
+  состояния. Решение о статусе
+  принимается сразу.
+end note
+
+note left of AUTO_IN_PROGRESS
+  Для AUTO обязательное
+  промежуточное состояние
+  с отправкой IN_PROGRESS
+end note
+@enduml

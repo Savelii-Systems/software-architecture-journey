@@ -8,6 +8,9 @@ This directory contains Architecture Decision Records (ADRs) that document key t
 ## What is an ADR?
 An ADR is a document that captures an important architectural decision along with its context and consequences.
 
+ADR — это не “правильное решение”
+это “обоснованное решение в конкретном контексте”
+
 ## ADR Index
 
 | ID | Title | Status | Date | Related Project |
